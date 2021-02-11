@@ -69,6 +69,7 @@ public class Client {
         try {
             stroutput = input.readUTF();
             System.out.println("Receive Data complete");
+            System.out.println("-------------------------------------------");
 
         }catch (Exception e){
             System.out.println("Can't receive message");

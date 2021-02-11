@@ -5,20 +5,29 @@
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="program.Controller">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" style="-fx-background-color: #122643;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="program.Controller">
    <children>
-      <Button fx:id="submitBtn" layoutX="551.0" layoutY="327.0" mnemonicParsing="false" onAction="#handleSubmitBtn" prefHeight="25.0" prefWidth="61.0" text="Submit" />
-      <Label layoutX="180.0" layoutY="192.0" text="CURRENCY EXCHANGE">
-         <font>
-            <Font size="43.0" />
-         </font>
-      </Label>
-      <Label layoutX="287.0" layoutY="408.0" text="Output      :" />
-      <Label fx:id="outputLabel" layoutX="401.0" layoutY="408.0" text="label" />
-      <TextField fx:id="textField" layoutX="269.0" layoutY="327.0" prefHeight="25.0" prefWidth="254.0" />
-      <ComboBox fx:id="comboBox1" layoutX="269.0" layoutY="359.0" prefHeight="25.0" prefWidth="125.0" promptText="select currency" />
-      <ComboBox layoutX="398.0" layoutY="359.0" prefHeight="25.0" prefWidth="125.0" promptText="select currency" />
+      <AnchorPane layoutX="51.0" layoutY="42.0" prefHeight="517.0" prefWidth="687.0" style="-fx-background-color: #1E385B; -fx-background-radius: 30; -fx-border-radius: 30;">
+         <children>
+            <Label layoutX="124.0" layoutY="125.0" text="CURRENCY EXCHANGE" textFill="WHITE">
+               <font>
+                  <Font size="43.0" />
+               </font>
+            </Label>
+            <Label layoutX="373.0" layoutY="486.0" prefHeight="17.0" prefWidth="292.0" text="Mid-market exchange rate - last updated Feb 11, 2021" textFill="WHITE" />
+         </children>
+      </AnchorPane>
+      <Pane layoutX="287.0" layoutY="421.0" prefHeight="49.0" prefWidth="224.0" style="-fx-background-color: #22587D; -fx-background-radius: 15;" />
+      <Button fx:id="submitBtn" layoutX="551.0" layoutY="327.0" mnemonicParsing="false" onAction="#handleSubmitBtn" prefHeight="25.0" prefWidth="61.0" style="-fx-background-color: #22587D; -fx-background-radius: 15;" text="Submit" textFill="#fff8f8" />
+      <Label layoutX="308.0" layoutY="437.0" text="Output      :" textFill="WHITE" />
+      <Label fx:id="outputLabel" layoutX="422.0" layoutY="437.0" text="label" textFill="WHITE" />
+      <TextField fx:id="textField" layoutX="269.0" layoutY="327.0" prefHeight="25.0" prefWidth="254.0" promptText="ENTER A NUMBER" />
+      <ComboBox fx:id="comboBox1" layoutX="269.0" layoutY="359.0" prefHeight="25.0" prefWidth="125.0" promptText="Select currency" />
+      <ComboBox fx:id="comboBox2" layoutX="398.0" layoutY="359.0" prefHeight="25.0" prefWidth="125.0" promptText="Select currency" />
+      <Label fx:id="warningLabel" layoutX="335.0" layoutY="391.0" prefHeight="17.0" prefWidth="133.0" text="Label" textFill="#e80000" />
+      <Label fx:id="warningLabel2" layoutX="551.0" layoutY="363.0" text="Label" textFill="#e40303" />
    </children>
 </AnchorPane>
